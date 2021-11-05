@@ -1,0 +1,111 @@
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    
+
+}
+body{
+    font-family: 'Roboto', serif;
+    margin: 0px;
+    background-color: #ebebeb;
+}
+header{
+    background-color: #EAC926;
+    margin:0px;
+    
+}
+
+.burger-menu{
+    font-size: 16px;
+    text-align: center;
+    padding: 12px;
+    margin: 12px;
+    color: white;
+  }
+
+.burger-menu i{
+      background-color:#1259c3;
+      padding: 12px;
+      border-radius: 16px;  
+  }
+   
+
+.Precios{
+    font-size: 18px;
+    margin: 10px;
+ }
+
+ .Titulares{
+    font-size: 24px;
+    margin: 10px;
+ }
+
+ .Descuentos{
+    font-size: 16px;
+    margin: 10px;
+ }
+
+ p{
+    font-size: 12px;
+    margin: 10px;
+ }
+
+ h3{
+    margin: 10px;
+    text-align: center;
+ }
+
+ .fa-truck{
+     color: #39b54a;
+     margin: 10px;
+ }
+
+ .fa-credit-card {
+      color:#1259c3;
+      font-size:32px;    
+      padding: 12px;
+ }
+
+ .fa-gift {
+    color:#1259c3;
+    font-size:32px;    
+    padding: 12px;
+}
+.fa-user-shield {
+    color:#1259c3;
+    font-size:32px;    
+    padding: 12px;
+    display: inline-block;
+    
+}
+
+
+
+ul{
+    margin: 10px;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+.center {
+    text-align:center;
+    width:100%;
+}
+
+
