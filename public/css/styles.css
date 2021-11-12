@@ -10,8 +10,44 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+.shortcuts ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
+nav{
+display: flex;
+justify-content: space-between;
+}
+
+.logo {
+    width : 50%;
+}
+
+.login ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+   }
+   
+   
 
 body{
     font-family: 'Roboto', serif;
@@ -29,10 +65,7 @@ padding:auto;
 margin:auto;
 }
 
-article {
-    margin:10px; 
-    background-color: white;
-}
+
 
 .contenido {
     border: 1px solid #ebebeb;
@@ -54,7 +87,16 @@ article {
       border-radius: 16px; 
 
   }
-   
+
+  .precioDescuento{
+      position: relative;
+      display: flex;
+     
+  }
+
+  .contenido {
+    position: relative;
+  }
 
 .Precios{
     font-size: 18px;
@@ -126,11 +168,13 @@ a:hover, a:visited, a:link, a:active
 }
 
 
-
 .FotoBusqueda{
-    width: 60%;
-    padding: 8px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
 
 @media (max-width: 361px) {
     .Descripcion {
@@ -141,11 +185,35 @@ a:hover, a:visited, a:link, a:active
     }
 }
 
-@media (min-width: 361px) {
+@media (min-width: 361px ){
     .burger-menu {display: none;}
-    article {box-shadow: 0px 5px 5px rgba(100, 100, 100,0.5);}
+
+    .containerArticulo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article 
+    {
+        flex: 45%; 
+        margin: 10px;     
+        background-color: white;
+        box-shadow: 0px 5px 5px rgba(100, 100, 100,0.5);
+    }
+   
 }
 
 @media (min-width: 769px) {
- 
+    .containerArticulo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article 
+    {
+        flex: 21%; 
+        margin: 10px;     
+        background-color: white;
+        box-shadow: 0px 5px 5px rgba(100, 100, 100,0.5);
+    }
 }
