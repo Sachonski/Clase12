@@ -1,29 +1,24 @@
-const express = require("express");
+const express = require('express');
+const path = require('path');
 const app = express();
-const path = require("path");
-const port = 3030;
+const port = 3030
 app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/home.html"));
-});
-
-app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/register.html"));
-});
-
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname + '/views/home.html'))
+})
 app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/login.html"));
+    res.sendFile(path.join(__dirname + "/views/login.html"));
 });
-
 app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/register.html"));
+    res.sendFile(path.join(__dirname + "/views/register.html"));
 });
 
-app.post("/", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/home.html"));
+app.listen(3030, () => console.log('http://localhost:3030/'));
+
+app.post('/login', (req, res) => {
+    console.log(req.body);
+    res.sendFile(__dirname + "/views/login.html");
 });
